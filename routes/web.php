@@ -23,17 +23,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware'=>['auth','admin']],function(){
-    Route::get('/admin', 'AdminController@admin');
-    // Route::get('/addCategory', 'AdminController@addCategory');
-    // Route::get('/allCategory', 'AdminController@allCategory');
-    // Route::get('/editCategory', 'AdminController@editCategory');
+Route::group(['prefix'=>'admin',
+            'middleware'=>['auth','admin']],
+function(){
+    Route::get('/', 'AdminController@admin');
 
-
-
-Route :: group([
-    'prefix'=>'admin'
-],function(){
+    
     Route::get('addCategory', 'AdminController@addCategory');
     Route::get('allCategory', 'AdminController@allCategory');
     Route::get('editCategory', 'AdminController@editCategory');
@@ -43,6 +38,6 @@ Route :: group([
     Route::get('addProduct', 'AdminController@addProduct');
     Route::get('editProduct', 'AdminController@editProduct');
     Route::get('allProduct', 'AdminController@allProduct');
-});
+
 
 });

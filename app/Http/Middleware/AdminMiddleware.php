@@ -18,10 +18,13 @@ class AdminMiddleware
     {   
         if(Auth::user()->type=="admin"){
             return $next($request);
+            
         }
         else{
-            return redirect('/');
+            // return redirect('/');
+            dd("ok");
         }
+       
         
     }
 }

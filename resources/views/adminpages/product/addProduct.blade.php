@@ -1,21 +1,5 @@
 @extends('adminlayout.adminmaster')
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<link href="summernote.css" rel="stylesheet">
-<script src="summernote.min.js"></script>
-
-<!-- include summernote-ko-KR -->
-<script src="lang/summernote-ko-KR.js"></script>
-    <script>
-      $('#summernote').summernote();
-      $(document).ready(function() {
-  $('#summernote').summernote({
-    lang: 'ko-KR' // default: 'en-US'
-  });
-});
-    </script>
 @section('title')
 <title>Add Product</title>
 @endsection
@@ -32,13 +16,13 @@ Add Product
                   <div class="form-group">
                     <label class="col-sm-3 control-label" for="form-control-1">Product Name</label>
                     <div class="col-sm-9">
-                      <input id="form-control-1" class="form-control" type="text">
+                      <input id="" class="form-control" type="text">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label" for="form-control-1">Product size</label>
                     <div class="col-sm-9">
-                      <input id="form-control-1" class="form-control" type="text">
+                      <input id="" class="form-control" type="text">
                     </div>
                   </div>
                  
@@ -53,7 +37,7 @@ Add Product
                   <div class="form-group">
                     <label class="col-sm-3 control-label" for="form-control-6">Select Category</label>
                     <div class="col-sm-9">
-                      <select id="form-control-6" class="form-control">
+                      <select id="" class="form-control">
                         <option value="c-plus-plus">Plate</option>
                         <option value="css">Glass</option>
                         <option value="java">Sound box</option>
@@ -87,7 +71,7 @@ Add Product
                   <div class="form-group">
                     <label class="col-sm-3 control-label" for="form-control-9">Image File</label>
                     <div class="col-sm-9">
-                      <input id="form-control-9" type="file" accept="image/*" multiple="multiple">
+                      <input id="" type="file" accept="image/*" multiple="multiple">
                       
                     </div>
                   </div>

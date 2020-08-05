@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="{{URL :: asset('adminpanel/css/application.min.css')}}">
     <link rel="stylesheet" href="{{URL :: asset('adminpanel/css/demo.min.css')}}">
     <link rel="stylesheet" href="{{URL :: asset('adminpanel/css/signup-1.min.css')}}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <!-- include libraries(jQuery, bootstrap) -->
+    
+   
   </head>
   <body class="layout layout-header-fixed">
     <div class="layout-header">
@@ -261,6 +266,13 @@
     <script src="{{URL :: asset('adminpanel/js/elephant.min.js')}}"></script>
     <script src="{{URL :: asset('adminpanel/js/application.min.js')}}"></script>
     <script src="{{URL :: asset('adminpanel/js/demo.min.js')}}"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script>
+        $(document).ready(function() {
+  $('#summernote').summernote();
+});
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -269,5 +281,7 @@
       ga('create', 'UA-83990101-1', 'auto');
       ga('send', 'pageview');
     </script>
+    
+
   </body>
 </html>
