@@ -1,0 +1,6 @@
+.fc-row .fc-content-skeleton td{
+    border-color: #ded6d6;
+}
+.fc th, .fc td{
+    border-width: 3px;
+}
